@@ -4,24 +4,27 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Главная страница</title>
 </head>
 <body>
 <header class="main-header">
     <a class="logo" href="#" aria-label="Логотип яхт-клуба"
-    ><img src="./img/logo-small.svg" alt="Логотип яхт-клуба Yacht Club"
+    ><img src="./img/logo-small.svg" alt="Логотип яхт-клуба Yacht Club" width="64" height="68"
     /></a>
     <nav class="main-header__nav" aria-label="Основное меню">
         <ul class="main-header__nav-list">
-            <li class="main-header__nav-item"><a href="#">Наш клуб</a></li>
-            <li class="main-header__nav-item"><a href="#">Регаты</a></li>
-            <li class="main-header__nav-item"><a href="#">Команда</a></li>
-            <li class="main-header__nav-item"><a href="#">Обучение</a></li>
-            <li class="main-header__nav-item"><a href="#">Новости</a></li>
-            <li class="main-header__nav-item"><a href="#">Контакты</a></li>
+            <li class="main-header__nav-item"><a href="#" class="main-header__nav-link">Наш клуб</a></li>
+            <li class="main-header__nav-item"><a href="#"class="main-header__nav-link">Регаты</a></li>
+            <li class="main-header__nav-item"><a href="#" class="main-header__nav-link">Команда</a></li>
+            <li class="main-header__nav-item"><a href="#" class="main-header__nav-link">Обучение</a></li>
+            <li class="main-header__nav-item"><a href="#" class="main-header__nav-link">Новости</a></li>
+            <li class="main-header__nav-item"><a href="#" class="main-header__nav-link">Контакты</a></li>
         </ul>
         <a class="signin" href="#">
-            <img src="img/account.svg" alt="Кабинет пользователя">
+            <img src="img/account.svg" alt="Кабинет пользователя" width="36" height="36">
         </a>
     </nav>
 </header>
@@ -32,11 +35,13 @@
                 class="hero-image"
                 src="./img/main-photo.jpg"
                 alt="Яхта клуба Yacht Club"
+                width="1170"
+                height="466"
         />
     </section>
     <section class="news">
         <article class="news__article">
-            <p>20 октября - 19 апреля</p>
+            <p class="date-time">20 октября - 19 апреля</p>
             <h2 class="article-title">Стань частью команды</h2>
             <p>
                 Если вы давно хотели попробовать себя в яхтинге – сейчас самое
@@ -48,10 +53,12 @@
                     class="news-image"
                     src="./img/photo-1.jpg"
                     alt="Яхта клуба Yacht Club"
+                    width="600"
+                    height="262"
             />
         </article>
         <article class="news__article">
-            <p>16 июля - 23 июля</p>
+            <p class="date-time">16 июля - 23 июля</p>
             <h2 class="article-title">Рожденные в воде</h2>
             <p>
                 Подарите детям настоящее приключение! День с морскими пиратами на
@@ -62,46 +69,48 @@
                     class="news-image"
                     src="./img/photo-2.jpg"
                     alt="Яхта клуба Yacht Club"
+                    width="600"
+                    height="252"
             />
         </article>
     </section>
     <section class="contacts">
-        <h2>Контакты</h2>
+        <h2 class="contacts__title">Контакты</h2>
         <ul class="contact-items">
             <li class="contact-item">
-                <h3>Адрес:</h3>
-                <address>г. Сочи, ул. Бзугу, 9</address>
+                <h3 class="contacts__item-title">Адрес:</h3>
+                <address class="adress">г. Сочи, ул. Бзугу, 9</address>
             </li>
             <li class="contact-item">
-                <h3>Телефон:</h3>
-                <a href="tel:+7622620563">8 (622) 62-05-63</a>
+                <h3 class="contacts__item-title">Телефон:</h3>
+                <a href="tel:+7622620563" class="contacts__item-link">8 (622) 62-05-63</a>
             </li>
             <li class="contact-item">
-                <h3>E-mail:</h3>
-                <a href="mailto:yachtclub-sochi@mail.ru">yachtclub-sochi@mail.ru</a>
+                <h3 class="contacts__item-title">E-mail:</h3>
+                <a href="mailto:yachtclub-sochi@mail.ru" class="contacts__item-link">yachtclub-sochi@mail.ru</a>
             </li>
             <li class="contact-item">
-                <h3>Мы в социальных сетях:</h3>
+                <h3 class="contacts__item-title" class="contacts__item-link">Мы в социальных сетях:</h3>
                 <ul class="social-list">
                     <li class="social-item">
                         <a href="#">
-                            <img src="./img/facebook.svg" alt="Facebook">
+                            <img src="./img/facebook.svg" alt="Facebook" width="40" height="40">
                         </a>
                     </li>
                     <li class="social-item">
                         <a href="#">
-                            <img src="./img/twitter.svg" alt="Twitter">
+                            <img src="./img/twitter.svg" alt="Twitter" width="40" height="40">
                         </a>
                     </li>
                     <li class="social-item">
                         <a href="#">
-                            <img src="./img/instagram.svg" alt="Instagram">
+                            <img src="./img/instagram.svg" alt="Instagram" width="40" height="40">
                         </a>
                     </li>
                 </ul>
             </li>
         </ul>
-        <img class="contacts-img" src="./img/map.png" alt="Карта с адресом яхт клуба">
+        <img class="contacts-img" src="./img/map.png" alt="Карта с адресом яхт клуба" width="670" height="351">
     </section>
 </main>
 <footer class="main-footer" role="contentinfo">
@@ -109,10 +118,12 @@
         <div class="main-footer__bottom">
             <div class="footer__legal">
                 <a class="logo" href="#" aria-label="Логотип яхт-клуба"
-                ><img src="./img/logo-large.svg" alt="Логотип яхт-клуба Yacht Club"
+                ><img src="./img/logo-large.svg" alt="Логотип яхт-клуба Yacht Club" width="100" height="106"
                 /></a>
-                <p>Политика конфиденциальности</p>
-                <p class="footer__copyright">Яхтклуб ©2020 Все права защищены</p>
+                <div class="policy">
+                    <p>Политика конфиденциальности</p>
+                    <p class="footer__copyright">Яхтклуб ©2020 Все права защищены</p>
+                </div>
             </div>
 
             <nav class="main-footer__nav" aria-label="Дополнительная навигация">
@@ -120,11 +131,11 @@
                     <ul class="footer-nav__list">
                         <li><h2 class="footer-nav__title">Компания</h2>
                             <ul>
-                                <li><a href="/about">О нас</a></li>
-                                <li><a href="/team">Команда</a></li>
-                                <li><a href="/news">Новости</a></li>
-                                <li><a href="/blog">Блог</a></li>
-                                <li><a href="/gallery">Галерея</a></li>
+                                <li><a href="/about" class="footer-nav__link">О нас</a></li>
+                                <li><a href="/team" class="footer-nav__link">Команда</a></li>
+                                <li><a href="/news" class="footer-nav__link">Новости</a></li>
+                                <li><a href="/blog" class="footer-nav__link">Блог</a></li>
+                                <li><a href="/gallery" class="footer-nav__link">Галерея</a></li>
                             </ul>
                         </li>
 
@@ -136,11 +147,11 @@
                         <li>
                             <h2 class="footer-nav__title">Яхт-клуб</h2>
                             <ul>
-                                <li><a href="/rules">Правила</a></li>
-                                <li><a href="/pricing">Стоимость</a></li>
-                                <li><a href="/application">Анкета</a></li>
-                                <li><a href="/faq">FAQ</a></li>
-                                <li><a href="/partners">Партнеры</a></li>
+                                <li><a href="/rules" class="footer-nav__link">Правила</a></li>
+                                <li><a href="/pricing" class="footer-nav__link">Стоимость</a></li>
+                                <li><a href="/application" class="footer-nav__link">Анкета</a></li>
+                                <li><a href="/faq" class="footer-nav__link">FAQ</a></li>
+                                <li><a href="/partners" class="footer-nav__link">Партнеры</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -152,11 +163,11 @@
                         <li>
                             <h2 class="footer-nav__title">Услуги</h2>
                             <ul>
-                                <li><a href="/yacht-rental">Аренда яхты</a></li>
-                                <li><a href="/wedding">Свадьба на яхте</a></li>
-                                <li><a href="/birthday">День рождения</a></li>
-                                <li><a href="/business">Бизнес-встречи</a></li>
-                                <li><a href="/cruises">Прогулки</a></li>
+                                <li><a href="/yacht-rental" class="footer-nav__link">Аренда яхты</a></li>
+                                <li><a href="/wedding" class="footer-nav__link">Свадьба на яхте</a></li>
+                                <li><a href="/birthday" class="footer-nav__link">День рождения</a></li>
+                                <li><a href="/business" class="footer-nav__link">Бизнес-встречи</a></li>
+                                <li><a href="/cruises" class="footer-nav__link">Прогулки</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -166,11 +177,11 @@
                         <li>
                             <h2 class="footer-nav__title">Регаты</h2>
                             <ul>
-                                <li><a href="/corporate-regattas">Корпоративные регаты</a></li>
-                                <li><a href="/calendar">Календарь мероприятий</a></li>
-                                <li><a href="/participate">Стать участником</a></li>
-                                <li><a href="/results">Результаты регат</a></li>
-                                <li><a href="/training">Обучение</a></li>
+                                <li><a href="/corporate-regattas" class="footer-nav__link">Корпоративные регаты</a></li>
+                                <li><a href="/calendar" class="footer-nav__link">Календарь мероприятий</a></li>
+                                <li><a href="/participate" class="footer-nav__link">Стать участником</a></li>
+                                <li><a href="/results" class="footer-nav__link">Результаты регат</a></li>
+                                <li><a href="/training" class="footer-nav__link">Обучение</a></li>
                             </ul>
                         </li>
                     </ul>
