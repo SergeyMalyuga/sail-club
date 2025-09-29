@@ -11,6 +11,14 @@ body {
     font-style: normal;
 }
 
+h2 {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #00C6BD;
+    text-underline-offset: 15px;
+    text-underline-position: under;
+}
+
 .main-header__nav-list {
     font-size: 14px;
     line-height: 18px;
